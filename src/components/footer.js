@@ -10,6 +10,8 @@ const StyledContainer = styled.footer`
   ${mixins.flexCenter};
   flex-direction: column;
   padding: 15px;
+  background-color: ${colors.darkNavy};
+  color: ${colors.slate};
   text-align: center;
   height: auto;
   min-height: 70px;
@@ -41,7 +43,7 @@ const StyledMetadata = styled.div`
   line-height: 1;
 `;
 const StyledGitHubLink = styled.a`
-  color: ${colors.lightSlate};
+  color: ${colors.slate};
   padding: 10px;
 `;
 const StyledGitHubInfo = styled.div`
@@ -70,7 +72,7 @@ const Footer = () => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/bchiang7/v4')
+    fetch('https://api.github.com/repos/created-by-varun/created-by-varun.github.io')
       .then(response => response.json())
       .then(json => {
         const { stargazers_count, forks_count } = json;
@@ -102,23 +104,20 @@ const Footer = () => {
       </StyledSocial>
       <StyledMetadata tabindex="-1">
         <StyledGitHubLink
-          href="https://github.com/bchiang7/v4"
+          href="https://github.com/created-by-varun/created-by-varun.github.io"
           target="_blank"
           rel="nofollow noopener noreferrer">
-          <div>
-            Designed &amp; Built by Brittany Chiang<br></br>
-            Revised by Chandrika Deb
-          </div>
+          <div>Designed &amp; Built by Varun</div>
 
           {githubInfo.stars && githubInfo.forks && (
             <StyledGitHubInfo>
               <span>
                 <FormattedIcon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
+                <span>{githubInfo.stars}</span>
               </span>
               <span>
                 <FormattedIcon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
+                <span>{githubInfo.forks}</span>
               </span>
             </StyledGitHubInfo>
           )}

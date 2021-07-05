@@ -5,7 +5,6 @@ module.exports = {
     title: config.siteTitle,
     siteUrl: config.siteUrl,
     description: config.siteDescription,
-    image: '/images/og.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,11 +16,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'ChandrikaDeb',
-        short_name: 'ChandrikaDeb',
+        name: 'Varun',
+        short_name: 'Varun',
         start_url: '/',
-        background_color: config.colors.darkNavy,
-        theme_color: config.colors.navy,
+        background_color: config.darkNavyColor,
+        theme_color: config.navyColor,
         display: 'minimal-ui',
         icon: 'src/images/logo.png',
       },
@@ -67,7 +66,7 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              tracedSVG: { color: config.colors.green },
+              tracedSVG: { color: '#64ffda' },
             },
           },
           {

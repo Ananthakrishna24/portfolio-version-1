@@ -38,7 +38,7 @@ export const pageQuery = graphql`
             title
             name
             subtitle
-            buttonText
+            contactText
           }
           html
         }
@@ -71,6 +71,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             company
+            location
             range
             url
           }
@@ -125,7 +126,6 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            buttonText
           }
           html
         }

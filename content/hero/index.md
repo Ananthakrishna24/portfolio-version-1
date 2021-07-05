@@ -1,12 +1,8 @@
 ---
-title: 'Hello World! My name is'
-name: 'Chandrika Deb'
-subtitle: 'I love exploring new things!'
-buttonText: 'Hire Me!'
+title: 'Hi, my name is'
+name: 'Varun'
+subtitle: 'I build things for the web.'
+contactText: 'Get In Touch'
 ---
 
-I'm an India based developer with a goal-driven creative mindset and passion for learning and innovating. Currently working as a Software Engineering Associate at [Amdocs](https://www.amdocs.com/).
-
-Outside work, I occasionally blog on [Medium](https://chandrikadeb7.medium.com/) or create amateur #PureCSS [Codepen](https://codepen.io/chandrikadeb7).
-
-When off-screen, I sketch my thoughts [here](https://pin.it/4W1Rxtj)!
+I'm a Full Stack Web & Game Developer based in Bangalore, India specializing in building (and designing) exceptional, high-quality websites and applications/games.
